@@ -7,6 +7,7 @@
 
 void faktorial(int angka)
 {
+	pthread_t id = pthread_self();
 	if (angka >= 1)
 	return angka*faktorial(angka-1);
 	else
