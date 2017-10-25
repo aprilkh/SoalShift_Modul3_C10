@@ -33,19 +33,15 @@ int main()
 	while(status!=1)
 	{
 	int pilih;
-	printf("Status Lohan %d", statusloh);
-	printf("Status Kepiting %d", statuskep);
-	printf("Beri Makan Lohan\n");
-	printf("Beri Makan Kepiting\n");
+	printf("Status Lohan %d\n", statusloh);
+	printf("Status Kepiting %d\n", statuskep);
+	printf("1. Beri Makan Lohan\n");
+	printf("2. Beri Makan Kepiting\n");
 	scanf ("%d", &pilih);
 	if (pilih == 1)
-	{
 	statusloh = statusloh+10;
-	};
 	else if (pilih == 2)
-	{
 	statuskep = statuskep+10;
-	};
 
 	if(status == 1 || statusloh > 100 || statuskep > 100){
 		printf("Game Over\n");
